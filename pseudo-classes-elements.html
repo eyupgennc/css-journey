@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        border: 5px solid black;
+        padding: 5px 8px;
+        text-decoration: none;
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+      }
+
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: white;
+        background-color: yellow;
+      }
+
+      a:active {
+        color: #fff;
+        background-color: violet;
+      }
+
+      div:hover p {
+        display: block;
+      }
+
+      p {
+        display: none;
+      }
+
+      p::first-line {
+        font-weight: bold;
+        color: aquamarine;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+      }
+
+      p.about::first-line {
+        color: blue;
+      }
+
+      p::first-letter {
+        font-size: 48px;
+      }
+
+      ::selection {
+        background-color: pink;
+      }
+
+      p::after {
+        content: "\261D";
+        font-size: 35px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo Classes-->
+    <a href="external-css1.html">Home</a>
+    <a href="display1.html">Products</a>
+    <a href="box-model1.html">About</a>
+    <br />
+    <br />
+    <div>
+      Click Here!
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
+        optio minus expedita sit, ad blanditiis maiores, eum neque voluptates
+        ducimus quae. Delectus quibusdam esse nobis veniam saepe veritatis, ab
+        officiis laborum aliquid sed sint rerum tempore voluptas voluptates
+        ipsa. Id!
+      </p>
+      <p class="about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore
+        maxime cum repudiandae illo! Dolorem accusamus iusto laborum vero
+        blanditiis ad magni iure tempora quidem enim eligendi totam modi,
+        fugiat, exercitationem quibusdam itaque dolor! Minima quisquam
+        perspiciatis sequi neque consectetur?
+      </p>
+    </div>
+
+    <!-- Pseudo Elements-->
+  </body>
+</html>
