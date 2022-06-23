@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      #showcase {
+        background-image: url("home-bg.jpeg");
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+      }
+
+      #how-it-works {
+        padding: 10px;
+      }
+
+      .main-header {
+        background-color: #fc997c;
+        padding: 8px 16px;
+      }
+
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 101px);
+        text-align: right;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .main-nav__item {
+        display: inline-block;
+        margin: 0 12px;
+      }
+
+      .main-header__logo {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+      }
+
+      .main-nav__items a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .main-nav__item a:hover,
+      .main-nav__item:hover::before {
+        color: #2e4c60;
+      }
+
+      .main-nav__item a:active,
+      .main-nav__item:active::before {
+        color: #fff;
+      }
+
+      .main-nav__item::before {
+        color: #fff;
+        content: "\2022";
+      }
+
+      .main-nav__item--login a {
+        color: #fff;
+        padding: 4px 16px;
+        background-color: #2e4c60;
+        border: 2px solid #fff;
+        border-radius: 8px;
+      }
+
+      .main-nav__item--login a:hover {
+        color: #2e4c60;
+        background-color: #fff;
+        border: 2px solid #2e4c60;
+      }
+
+      .main-nav__item--login::before {
+        content: none;
+      }
+
+      .row1 {
+        margin: 40px;
+        text-align: center;
+      }
+
+      .col {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        padding: 16px;
+        margin: 8px;
+      }
+
+      #how-it-works h2 {
+        font-size: 32px;
+        color: #3e4555;
+        font-weight: 600;
+      }
+
+      .icon-box h3 {
+        color: #3e4555;
+        font-size: 26px;
+      }
+
+      .icon-box i {
+        color: #fc997c;
+      }
+
+      .col-2 {
+        display: inline-block;
+        width: calc(50% - 2px);
+        height: 350px;
+        vertical-align: top;
+      }
+
+      .features__left {
+        background-image: url("features.jpeg");
+        background-position: top center;
+        background-size: cover;
+      }
+
+      .features__right {
+        padding: 40px;
+        background-color: #edf5f7;
+        text-align: left;
+      }
+
+      .features__right h3 {
+        font-size: 30px;
+      }
+
+      .features a {
+        border: 1px solid #fc997c;
+        border-radius: 3px;
+        padding: 7px 15px;
+        text-decoration: none;
+        background-color: #fc997c;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+        margin: 15px;
+      }
+
+      .features a:hover {
+        color: #fc997c;
+        background-color: #fff;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">Films</a></li>
+          <li class="main-nav__item"><a href="#">Series</a></li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <div class="row1">
+          <h2>How it Works</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            aliquam saepe error suscipit officiis incidunt.
+          </p>
+        </div>
+        <div class="row1">
+          <div class="icon-box col">
+            <i class="fa-solid fa-arrow-right-to-bracket fa-3x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+              magni tempore sint assumenda pariatur eum culpa placeat quas unde
+              modi?
+            </p>
+          </div>
+          <div class="icon-box col">
+            <i class="fa-solid fa-layer-group fa-3x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              eius voluptatem temporibus sit aut maiores dolor labore non
+              exercitationem? Dicta, expedita! Quis dolorem quod ullam.
+            </p>
+          </div>
+          <div class="icon-box col">
+            <i class="fa-regular fa-face-smile fa-3x"></i>
+            <h3>Enjoy Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod
+              nobis ipsam assumenda, qui aspernatur possimus sunt accusamus
+              veniam voluptates!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>Watch all Movies & TV Shows once they get released!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+              nulla sunt itaque soluta eius nemo hic a possimus. Consequuntur,
+              at. Dolorem tempore asperiores commodi tenetur, nisi voluptatibus
+              maxime quaerat minus.
+            </p>
+            <a href="">View Features</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
