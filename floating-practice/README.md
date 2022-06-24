@@ -1,1 +1,1 @@
-![floating_practice-screenshot](floating-practice.jpeg)
+![floating_practice-screenshot](floating-image.jpeg)
