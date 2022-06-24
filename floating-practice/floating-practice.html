@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Practice</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 32px;
+        margin: 0;
+      }
+      header,
+      footer {
+        /* height: 120px; */
+        background-color: #8267be;
+        color: #ffbd35;
+        padding: 15px;
+      }
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0;
+      }
+      section {
+        width: 75%;
+      }
+      aside {
+        width: 25%;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      aside ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      aside li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #502064;
+        color: #fff;
+      }
+      aside a {
+        color: #fff;
+        text-decoration: none;
+      }
+      aside li:hover {
+        cursor: pointer;
+        background-color: #8267be;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+    <main class="clearfix">
+      <aside class="menu col">
+        <nav>
+          <ul>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">Javascript</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section class="content col">
+        <h1>Complete Web Development Course</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quam
+          repellat atque architecto. Possimus unde, doloremque quisquam,
+          suscipit blanditiis delectus ipsum in, magni quasi similique quos
+          ipsam consequuntur labore dicta!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum,
+          doloribus molestias reiciendis harum nihil pariatur vel. Libero
+          recusandae deleniti nisi omnis culpa dolor possimus aliquam sint!
+          Animi, molestias repellendus!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>
