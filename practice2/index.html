@@ -175,6 +175,50 @@
       .row {
         margin-bottom: 40px;
       }
+      .plan {
+        width: 33%;
+        padding: 16px;
+        float: left;
+      }
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .section-title {
+        text-align: center;
+      }
+
+      section.plans li {
+        text-align: center;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .innerplan {
+        background: #edf5f7;
+        padding: 25px 10px;
+        border-radius: 5px;
+      }
+      .plan__badge {
+        background: #fff;
+        color: #fc997c;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      .recommended_plan {
+        color: #edf5f7;
+        background-color: #396ab0;
+      }
+      .plan_features {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .plan_features li {
+        margin: 6px 0;
+      }
     </style>
   </head>
   <body>
@@ -182,7 +226,7 @@
       <a href="#" class="main-header__logo">MovieApp</a>
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="#">Films</a></li>
+          <li class="main-nav__item"><a href="#">Movies</a></li>
           <li class="main-nav__item"><a href="#">Series</a></li>
           <li class="main-nav__item main-nav__item--login">
             <a href="#">Login</a>
@@ -244,6 +288,64 @@
               maxime quaerat minus.
             </p>
             <a href="">View Features</a>
+          </div>
+        </div>
+      </section>
+      <section class="plans" style="margin-bottom: 40px">
+        <h2 class="section-title">Become a Premium Member</h2>
+        <div class="clearfix container" style="text-align: center">
+          <div class="plan">
+            <div class="innerplan">
+              <h2>Free</h2>
+              <h3>0/month</h3>
+              <ul class="plan_features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>Screens you can watch</li>
+                <li>First Month Free</li>
+              </ul>
+              <div>
+                <button>Choose a Plan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="innerplan recommended_plan">
+              <h2 class="plan__badge">Recommended</h2>
+              <h3>Basic</h3>
+              <ul class="plan_features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>Screens you can watch</li>
+                <li>First Month Free</li>
+              </ul>
+              <div>
+                <button>Choose a Plan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="innerplan">
+              <h2>Premium</h2>
+              <h3>&#x24;19.99/month</h3>
+              <ul class="plan_features">
+                <li>HD available</li>
+                <li>Unlimited Movies and TV shows</li>
+                <li>Watch on your phone & tablet</li>
+                <li>Download and watch offline</li>
+                <li>Screens you can watch</li>
+                <li>First Month Free</li>
+              </ul>
+              <div>
+                <button>Choose a Plan</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
