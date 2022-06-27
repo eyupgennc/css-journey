@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradients</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        text-align: center;
+      }
+      body {
+        margin: 0;
+        font-family: "Anek Malayalam", sans-serif;
+      }
+      #linear1 {
+        position: relative;
+        height: 200px;
+        background-image: linear-gradient(
+          rgba(0, 153, 0, 0.5),
+          rgba(51, 204, 204, 0.9)
+        );
+      }
+      #linear2 {
+        position: relative;
+        height: 200px;
+        background-image: linear-gradient(to right, red, yellow);
+      }
+      #linear3 {
+        position: relative;
+        height: 200px;
+        background-image: linear-gradient(to bottom right, #00ff00, #3333cc);
+      }
+      #linear4 {
+        position: relative;
+        height: 200px;
+        background-image: linear-gradient(90deg, #ccff66, #3399ff);
+      }
+      #linear5 {
+        position: relative;
+        height: 200px;
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      #linear6 {
+        position: relative;
+        height: 200px;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+      #radial1 {
+        position: relative;
+        height: 200px;
+        background-image: radial-gradient(red, orange, magenta);
+      }
+      #radial2 {
+        position: relative;
+        height: 200px;
+        background-image: radial-gradient(red 5%, orange 15%, magenta 60%);
+      }
+      #radial3 {
+        position: relative;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        background-image: radial-gradient(circle, red, orange, magenta);
+      }
+      #conic1 {
+        text-align: center;
+        position: relative;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(red, orange, magenta);
+      }
+      #conic2 {
+        text-align: center;
+        position: relative;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(red, orange, magenta, black, blue);
+      }
+      #conic3 {
+        text-align: center;
+        position: relative;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        background-image: conic-gradient(
+          red 0deg,
+          red 90deg,
+          yellow 90deg,
+          yellow 180deg,
+          green 180deg,
+          green 270deg,
+          blue 270deg
+        );
+        border-radius: 50%;
+      }
+      p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Linear Gradients-->
+    <h1>CSS Linear Gradients</h1>
+    <div id="linear1"><p>Top to Bottom</p></div>
+    <br />
+    <div id="linear2"><p>Left to Right</p></div>
+    <br />
+    <div id="linear3"><p>Diagonal (to bottom right)</p></div>
+    <br />
+    <div id="linear4"><p>Using Angles (90deg)</p></div>
+    <br />
+    <div id="linear5"><p>Multiple Color Stops (Rainbow Colors)</p></div>
+    <br />
+    <div id="linear6"><p>Repeating-Linear-Gradient</p></div>
+
+    <!--Radial Gradients-->
+    <h1>CSS Radial Gradients</h1>
+    <div id="radial1"><p>Evenly Spaced Color Stops</p></div>
+    <br />
+    <div id="radial2"><p>Differently Spaced Color Stops</p></div>
+    <br />
+    <div id="radial3" style="text-align: center"><p>Set Shape</p></div>
+
+    <!--Conic Gradients-->
+    <h1>CSS Conic Gradients</h1>
+    <div id="conic1"><p>Conic Gradient: Three Colors</p></div>
+    <br />
+    <div id="conic2"><p>Conic Gradient: Five Colors</p></div>
+    <br />
+    <div id="conic3"><p>Create Pie Charts</p></div>
+  </body>
+</html>
