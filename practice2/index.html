@@ -15,267 +15,70 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="buttons.css" />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        margin: 0;
-        font-family: "Lato", sans-serif;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      #showcase {
-        background-image: url("home-bg.jpeg");
-        background-position: center;
-        height: 500px;
-        width: 100%;
-        padding: 10px;
-        position: relative;
-      }
-      #showcase h1 {
-        position: absolute;
-        color: #fff;
-        font-size: 45px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      #how-it-works {
-        padding: 10px;
-      }
-      .main-header {
-        background-color: #fc997c;
-        padding: 8px 16px;
-        position: fixed;
-        width: 100%;
-        z-index: +5;
-        top: 0;
-      }
-
-      .main-nav {
-        display: inline-block;
-        width: calc(100% - 101px);
-        text-align: right;
-        font-family: "Roboto", sans-serif;
-      }
-
-      .main-nav__items {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .main-nav__item {
-        display: inline-block;
-        margin: 0 12px;
-        list-style-type: none;
-      }
-
-      .main-header__logo {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 21px;
-      }
-
-      .main-nav__items a {
-        text-decoration: none;
-        color: #fff;
-      }
-
-      .main-nav__item a:hover,
-      .main-nav__item:hover::before {
-        color: #2e4c60;
-      }
-
-      .main-nav__item a:active,
-      .main-nav__item:active::before {
-        color: #fff;
-      }
-
-      /* .main-nav__item::before {
-        color: #fff;
-        content: "\2022";
-      } */
-
-      .main-nav__item--login::before {
-        content: none;
-      }
-
-      .row1 {
-        margin: 40px;
-        text-align: center;
-      }
-
-      .col {
-        display: inline-block;
-        width: 30%;
-        text-align: center;
-        padding: 16px;
-        margin: 8px;
-      }
-      .icon-box h3 {
-        color: #3e4555;
-        font-size: 26px;
-      }
-
-      .icon-box i {
-        color: #fc997c;
-      }
-
-      .col-2 {
-        display: inline-block;
-        width: calc(50% - 2px);
-        height: 350px;
-        vertical-align: top;
-      }
-
-      .features__left {
-        background-image: url("features.jpeg");
-        background-position: top center;
-        background-size: cover;
-      }
-
-      .features__right {
-        padding: 40px;
-        background-color: #edf5f7;
-        text-align: left;
-      }
-
-      .features__right h3 {
-        font-size: 30px;
-      }
-      main {
-        margin-top: 50px;
-      }
-      .row {
-        margin-bottom: 40px;
-      }
-      .plan {
-        width: 33%;
-        padding: 16px;
-        float: left;
-      }
-      .container {
-        width: 1000px;
-        margin: 0 auto;
-      }
-      .section-title {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 32px;
-        color: #3e4555;
-        font-weight: 600;
-      }
-
-      section.plans li {
-        text-align: center;
-      }
-      .clearfix::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-      .innerplan {
-        background: #edf5f7;
-        padding: 25px 10px;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-        transition: box-shadow 0.6s;
-      }
-      .innerplan:hover {
-        box-shadow: rgba(0, 0, 0, 0.75) 0px 25px 50px -12px;
-      }
-      .plan__badge {
-        background: #fff;
-        color: #fc997c;
-        padding: 8px;
-        border-radius: 5px;
-      }
-      .recommended_plan {
-        color: #edf5f7;
-        background-color: #396ab0;
-        position: relative;
-        top: -20px;
-      }
-      .plan_features {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      .plan_features li {
-        margin: 6px 0;
-      }
-      #backtotop {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-      }
-      #backtotop i {
-        color: #fc997c;
-        font-size: 45px;
-        transition: color 0.6s;
-      }
-      #backtotop i:hover {
-        color: #fb6537;
-      }
-    </style>
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="body">
     <header class="main-header">
-      <a href="#" class="main-header__logo">MovieApp</a>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="#">Movies</a></li>
-          <li class="main-nav__item"><a href="#">Series</a></li>
-          <li class="main-nav__item main-nav__item--login">
-            <a href="#" class="btn btn-secondary">Login</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="#">Movies</a></li>
+            <li class="main-nav__item"><a href="#">Series</a></li>
+            <li class="main-nav__item main-nav__item--login">
+              <a href="#" class="btn btn-secondary">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="showcase">
-        <h1>Welcome to MovieApp</h1>
+        <div class="caption">
+          <h2>Welcome</h2>
+          <h3>
+            Millions of Movies, TV shows and people to discover. Explore now.
+          </h3>
+        </div>
       </section>
       <section id="how-it-works">
-        <div class="row1">
-          <h2 class="section-title">How it Works?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            aliquam saepe error suscipit officiis incidunt.
-          </p>
-        </div>
-        <div class="row1">
-          <div class="icon-box col">
-            <i class="fa-solid fa-arrow-right-to-bracket fa-3x"></i>
-            <h3>Register</h3>
+        <div class="container">
+          <div class="row-features">
+            <h2 class="section-title">How it Works?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-              magni tempore sint assumenda pariatur eum culpa placeat quas unde
-              modi?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              aliquam saepe error suscipit officiis incidunt.
             </p>
           </div>
-          <div class="icon-box col">
-            <i class="fa-solid fa-layer-group fa-3x"></i>
-            <h3>Choose a Plan</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              eius voluptatem temporibus sit aut maiores dolor labore non
-              exercitationem? Dicta, expedita! Quis dolorem quod ullam.
-            </p>
-          </div>
-          <div class="icon-box col">
-            <i class="fa-regular fa-face-smile fa-3x"></i>
-            <h3>Enjoy Movies</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quod
-              nobis ipsam assumenda, qui aspernatur possimus sunt accusamus
-              veniam voluptates!
-            </p>
+          <div class="row-features">
+            <div class="icon-box col">
+              <i class="fa-solid fa-arrow-right-to-bracket fa-3x"></i>
+              <h3>Register</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Expedita magni tempore sint assumenda pariatur eum culpa placeat
+                quas unde modi?
+              </p>
+            </div>
+            <div class="icon-box col">
+              <i class="fa-solid fa-layer-group fa-3x"></i>
+              <h3>Choose a Plan</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                eius voluptatem temporibus sit aut maiores dolor labore non
+                exercitationem? Dicta, expedita! Quis dolorem quod ullam.
+              </p>
+            </div>
+            <div class="icon-box col">
+              <i class="fa-regular fa-face-smile fa-3x"></i>
+              <h3>Enjoy Movies</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                quod nobis ipsam assumenda, qui aspernatur possimus sunt
+                accusamus veniam voluptates!
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -296,62 +99,81 @@
       </section>
       <section class="plans" style="margin-bottom: 40px">
         <h2 class="section-title">Become a Premium Member</h2>
+
         <div
           class="clearfix container"
           style="text-align: center; position: relative"
         >
-          <div class="plan">
-            <div class="innerplan">
-              <h2>Free</h2>
-              <h3>0/month</h3>
-              <ul class="plan_features">
-                <li>HD available</li>
-                <li>Unlimited Movies and TV shows</li>
-                <li>Watch on your phone & tablet</li>
-                <li>Download and watch offline</li>
-                <li>Screens you can watch</li>
-                <li>First Month Free</li>
-              </ul>
-              <div>
-                <button class="btn btn-primary">Choose a Plan</button>
+          <div class="row">
+            <div class="col-3 plan">
+              <div class="innerplan">
+                <h2>Free</h2>
+                <h3>0/month</h3>
+                <ul class="plan_features">
+                  <li>HD available</li>
+                  <li>Unlimited Movies and TV shows</li>
+                  <li>Watch on your phone & tablet</li>
+                  <li>Download and watch offline</li>
+                  <li>Screens you can watch</li>
+                  <li>First Month Free</li>
+                </ul>
+                <div>
+                  <button class="btn btn-primary">Choose a Plan</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 plan">
+              <div class="innerplan recommended_plan">
+                <h2 class="plan__badge">Recommended</h2>
+                <h3>Basic</h3>
+                <ul class="plan_features">
+                  <li>HD available</li>
+                  <li>Unlimited Movies and TV shows</li>
+                  <li>Watch on your phone & tablet</li>
+                  <li>Download and watch offline</li>
+                  <li>Screens you can watch</li>
+                  <li>First Month Free</li>
+                </ul>
+                <div>
+                  <button class="btn btn-primary">Choose a Plan</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 plan">
+              <div class="innerplan">
+                <h2>Premium</h2>
+                <h3>&#x24;19.99/month</h3>
+                <ul class="plan_features">
+                  <li>HD available</li>
+                  <li>Unlimited Movies and TV shows</li>
+                  <li>Watch on your phone & tablet</li>
+                  <li>Download and watch offline</li>
+                  <li>Screens you can watch</li>
+                  <li>First Month Free</li>
+                </ul>
+                <div>
+                  <button class="btn btn-primary">Choose a Plan</button>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="plan">
-            <div class="innerplan recommended_plan">
-              <h2 class="plan__badge">Recommended</h2>
-              <h3>Basic</h3>
-              <ul class="plan_features">
-                <li>HD available</li>
-                <li>Unlimited Movies and TV shows</li>
-                <li>Watch on your phone & tablet</li>
-                <li>Download and watch offline</li>
-                <li>Screens you can watch</li>
-                <li>First Month Free</li>
-              </ul>
-              <div>
-                <button class="btn btn-primary">Choose a Plan</button>
-              </div>
-            </div>
+        </div>
+      </section>
+      <section id="counters">
+        <div class="counter row">
+          <div class="col-3">
+            <span class="counter__item">974</span>
+            <h4>Movies</h4>
           </div>
-
-          <div class="plan">
-            <div class="innerplan">
-              <h2>Premium</h2>
-              <h3>&#x24;19.99/month</h3>
-              <ul class="plan_features">
-                <li>HD available</li>
-                <li>Unlimited Movies and TV shows</li>
-                <li>Watch on your phone & tablet</li>
-                <li>Download and watch offline</li>
-                <li>Screens you can watch</li>
-                <li>First Month Free</li>
-              </ul>
-              <div>
-                <button class="btn btn-primary">Choose a Plan</button>
-              </div>
-            </div>
+          <div class="col-3">
+            <span class="counter__item">476</span>
+            <h4>TV Shows</h4>
+          </div>
+          <div class="col-3">
+            <span class="counter__item">976</span>
+            <h4>User</h4>
           </div>
         </div>
       </section>
