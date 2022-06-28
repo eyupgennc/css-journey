@@ -163,7 +163,7 @@ main {
 }
 
 .row {
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .row::after {
@@ -309,4 +309,69 @@ section.plans li {
 
 .card-image {
   max-height: 350px;
+}
+
+footer {
+  background-color: #2e4c6d;
+  padding: 30px;
+  margin-top: 30px;
+}
+.links {
+  transform: translateY(50%);
+  float: left;
+  width: 75%;
+}
+
+.icons {
+  float: left;
+  width: 25%;
+}
+.links a {
+  font-size: 24px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.footer-icons {
+  text-align: right;
+}
+
+.fab {
+  padding: 10px;
+  font-size: 22px;
+  /* border-radius: 50%; */
+  color: #fff;
+  border-radius: 50%;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #3b5998;
+}
+.fa-twitter {
+  background-color: #55acee;
+}
+.fa-instagram {
+  background-color: #125688;
 }
