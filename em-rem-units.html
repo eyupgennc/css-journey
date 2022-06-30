@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Em & Rem</title>
+    <style>
+      html {
+        font-size: 62.5%; /* 10px */
+      }
+
+      body {
+        font-size: 1.5rem;
+      }
+
+      @media (min-width: 576px) and (max-width: 767px) {
+        html {
+          font-size: 12px;
+        }
+
+        #kutu-1 h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      @media (min-width: 767px) {
+        html {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kutu-1">
+      <h2>Lorem, ipsum.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        voluptates ab quod deserunt temporibus blanditiis quae, magni, eius
+        magnam praesentium quia, natus beatae illo? Earum aspernatur deserunt
+        porro dolor minima.
+      </p>
+    </div>
+    <div id="kutu-2">
+      <h3>Lorem, ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        voluptates ab quod deserunt temporibus blanditiis quae, magni, eius
+        magnam praesentium quia, natus beatae illo? Earum aspernatur deserunt
+        porro dolor minima.
+      </p>
+    </div>
+  </body>
+</html>
