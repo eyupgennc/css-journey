@@ -1,18 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("buttons.css");
+@import url("base.css");
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 #showcase {
@@ -25,7 +17,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 80vh;
+  height: 40vh;
   width: 100%;
   position: relative;
 }
@@ -33,7 +25,7 @@ body {
 #showcase .caption {
   position: absolute;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,15 +35,44 @@ body {
   border-radius: 10px;
 }
 
-/* #showcase h1 {
-    position: absolute;
-    color: #fff;
-    font-size: 45px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #333;
-  } */
+#showcase h1 {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+}
+
+@media (min-width: 576px) {
+  #showcase {
+    height: 50vh;
+  }
+
+  #showcase .caption {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 768px) {
+  #showcase {
+    height: 60vh;
+  }
+
+  #showcase .caption {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  #showcase {
+    height: 70vh;
+  }
+
+  #showcase .caption {
+    font-size: 26px;
+  }
+}
 
 #how-it-works {
   padding: 10px;
@@ -166,38 +187,8 @@ main {
   margin-top: 50px;
 }
 
-.row {
-  margin-top: 40px;
-}
-
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.col-2 {
-  float: left;
-  width: 50%;
-}
-
-.col-3 {
-  float: left;
-  width: 33.3%;
-}
-
-.col-4 {
-  float: left;
-  width: 25%;
-}
-
 .plan {
   padding: 16px;
-}
-
-.container {
-  width: 1000px;
-  margin: 0 auto;
 }
 
 .section-title {
@@ -210,12 +201,6 @@ main {
 
 section.plans li {
   text-align: center;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .innerplan {
@@ -305,10 +290,6 @@ section.plans li {
 }
 .card-body {
   padding: 30px;
-}
-
-.img-fluid {
-  width: 100%;
 }
 
 .card-image {
