@@ -9,14 +9,19 @@
   </head>
   <body id="body">
     <header class="main-header">
-      <div class="container">
+      <div id="main-nav" class="container">
         <a href="#" class="main-header__logo">MovieApp</a>
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="#">Movies</a></li>
             <li class="main-nav__item"><a href="#">Series</a></li>
             <li class="main-nav__item main-nav__item--login">
-              <a href="#" class="btn btn-secondary">Login</a>
+              <a href="register.html" class="btn btn-secondary">Login</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" onclick="displayMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
             </li>
           </ul>
         </nav>
@@ -127,7 +132,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-3 plan">
               <div class="innerplan">
                 <h2>Premium</h2>
@@ -244,5 +248,11 @@
     <a href="#body" id="backtotop"
       ><i class="fas fa-chevron-circle-up fa-3x"></i
     ></a>
+    <script>
+      function displayMenu() {
+        var link = document.getElementById("main-nav");
+        link.classList.toggle("responsive");
+      }
+    </script>
   </body>
 </html>
