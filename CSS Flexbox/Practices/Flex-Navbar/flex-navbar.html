@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex-Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       * {
         margin: 0;
@@ -38,6 +42,43 @@
       .items a:hover {
         background-color: #ffb833;
       }
+
+      .items li:last-child {
+        display: none;
+      }
+      @media (max-width: 600px) {
+        .main-header {
+          flex-direction: column;
+          position: relative;
+        }
+
+        .main-header a {
+          align-self: flex-start;
+          padding: 20px;
+        }
+
+        .items {
+          flex-direction: column;
+        }
+
+        .items a {
+          text-align: center;
+          padding: 10px;
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+          border-bottom: rgba(0, 0, 0, 0.1);
+        }
+
+        .items li:last-child {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 10px;
+        }
+
+        .responsive .main-header li:not(:last-child) {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -49,6 +90,11 @@
           <li><a href="">About</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">Contact</a></li>
+          <li>
+            <a href="">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
