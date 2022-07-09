@@ -31,6 +31,7 @@
         text-decoration: none;
         padding: 20px;
         color: #fff;
+        text-align: center;
       }
 
       .navbar a:hover {
@@ -75,6 +76,18 @@
         text-align: center;
         font-size: 20px;
         padding: 20px;
+      }
+
+      @media (max-width: 700px) {
+        .main,
+        .navbar {
+          flex-direction: column;
+        }
+
+        .section,
+        .aside {
+          width: 100%;
+        }
       }
     </style>
   </head>
