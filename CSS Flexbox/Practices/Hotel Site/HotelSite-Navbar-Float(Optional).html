@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hotel Site - Navbar (Float)</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #1a132f;
+        overflow: hidden;
+        text-transform: uppercase;
+      }
+
+      ul {
+        overflow: hidden;
+      }
+
+      h1 {
+        float: left;
+        padding: 20px 20px 20px 50px;
+        color: #fff;
+      }
+
+      nav {
+        float: right;
+      }
+
+      li {
+        float: left;
+        padding: 20px 50px 20px 20px;
+      }
+      
+      a {
+        /* display: inline-block; */
+        padding: 10px;
+        color: #f7e2e2;
+        /* float: left; */
+        border-bottom: 2px solid #1a132f;
+        transition: border-bottom 0.4s;
+      }
+
+      a:hover {
+        border-bottom: 2px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <i class="fa-solid fa-hotel"></i
+        ><span style="color: #61a4bc; padding-left: 10px">Deluxe</span> Hotel
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
