@@ -129,3 +129,16 @@
   border: 1px solid var(--primary);
   color: var(--white);
 }
+
+/* flex items */
+.flex-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+  flex-basis: 100%;
+}
