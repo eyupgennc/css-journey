@@ -192,7 +192,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 /* section */
@@ -232,4 +232,20 @@
   padding: 0 0.4rem;
 }
 
-/* teams */
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  font-size: 24px;
+}
+
+.footer a {
+  margin: 0 2rem;
+  color: var(--info);
+}
+
+.footer p {
+  padding: 2rem;
+}
