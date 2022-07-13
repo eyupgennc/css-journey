@@ -61,9 +61,12 @@ img {
   color: #fff;
   padding: 1rem 2rem;
   margin: 0 0.5rem;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.1);
+  transition: box-shadow 0.6s;
 }
 
 .navbar a:hover {
+  box-shadow: rgba(153, 153, 102, 1) 0px 25px 50px -12px;
   border-bottom: 2px solid var(--warning);
 }
 
@@ -156,4 +159,35 @@ img {
   margin: 2rem 0;
 }
 
-/* gallery */
+.content2 {
+  background-color: var(--warning);
+  margin-top: -5px;
+  padding: 4rem;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.card {
+  font-weight: 700;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  transition: box-shadow 0.6s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px;
+}
+/* teams */
+.teams img {
+  border-radius: 50%;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  transition: box-shadow 0.6s;
+}
+
+.teams img:hover {
+  /* opacity: 0.8; */
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -12px;
+}
+
+.teams > div:hover {
+}
