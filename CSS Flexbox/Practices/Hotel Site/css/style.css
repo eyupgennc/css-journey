@@ -210,3 +210,53 @@ img {
 .contact h2 {
   font-size: 4rem;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    margin: 0 3px;
+  }
+
+  .teams img {
+    width: 70%;
+  }
+
+  .flex-items .column {
+    flex: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .about h2 {
+    margin: 3rem 0;
+  }
+
+  .about p {
+    margin: 3rem 0;
+  }
+
+  .column img {
+    margin: 0.5rem 0;
+  }
+
+  .gallery img {
+    width: 95%;
+  }
+
+  .gallery .column {
+    text-align: center;
+  }
+}

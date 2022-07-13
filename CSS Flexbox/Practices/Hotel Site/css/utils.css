@@ -27,24 +27,31 @@
 .text-primary {
   color: var(--primary);
 }
+
 .text-secondary {
   color: var(--secondary);
 }
+
 .text-success {
   color: var(--success);
 }
+
 .text-danger {
   color: var(--danger);
 }
+
 .text-warning {
   color: var(--warning);
 }
+
 .text-info {
   color: var(--info);
 }
+
 .text-dark {
   color: var(--dark);
 }
+
 .text-light {
   color: var(--light);
 }
@@ -53,24 +60,31 @@
 .bg-primary {
   background-color: var(--primary);
 }
+
 .bg-secondary {
   background-color: var(--secondary);
 }
+
 .bg-success {
   background-color: var(--success);
 }
+
 .bg-danger {
   background-color: var(--danger);
 }
+
 .bg-warning {
   background-color: var(--warning);
 }
+
 .bg-info {
   background-color: var(--info);
 }
+
 .bg-dark {
   background-color: var(--dark);
 }
+
 .bg-light {
   background-color: var(--light);
 }
@@ -248,4 +262,22 @@
 
 .footer p {
   padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .flex-columns .column {
+    flex: 100%;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .footer a {
+    margin: 0 1rem;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
 }
