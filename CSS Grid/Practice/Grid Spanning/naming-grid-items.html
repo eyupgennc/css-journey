@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Spanning</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+          "header header header"
+          "sidebar content box6"
+          "sidebar box4 box6"
+          "sidebar box5 box6"
+          "footer footer footer";
+        gap: 10px;
+      }
+
+      .box {
+        background-color: #cee5d0;
+        padding: 20px;
+      }
+
+      .header {
+        background-color: #3ab4f2;
+        color: #f6f6f6;
+        text-align: center;
+        grid-area: header;
+      }
+
+      .content {
+        grid-area: content;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .box4 {
+        grid-area: box4;
+      }
+
+      .box5 {
+        grid-area: box5;
+      }
+
+      .box6 {
+        grid-area: box6;
+      }
+
+      .footer {
+        text-align: center;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h1 class="animate__animated animate__bounce">Page Header</h1>
+      </header>
+      <section class="box content">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure commodi
+          animi modi voluptate, consequatur beatae optio officia. Architecto
+          neque eius sequi nobis cum, aspernatur voluptates alias nemo
+          consectetur, exercitationem quis!
+        </p>
+      </section>
+      <section class="box sidebar">
+        <h2>Lorem, ipsum.</h2>
+        <ul>
+          <li>Lorem.</li>
+          <li>Lorem.</li>
+          <li>Lorem.</li>
+          <li>Lorem.</li>
+        </ul>
+      </section>
+      <div class="box box4">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+          dolorem quibusdam vero aliquam dolor, voluptatibus delectus similique
+          impedit corrupti dignissimos consequuntur ea asperiores sint expedita
+          illo possimus qui! Sit, asperiores.
+        </p>
+      </div>
+      <div class="box box5">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+          eveniet officia? Eveniet debitis, fuga quos ipsum voluptate officia
+          possimus? Doloribus voluptatum accusantium a exercitationem voluptates
+          animi deleniti ducimus fuga vitae.
+        </p>
+      </div>
+      <div class="box box6">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+          similique debitis laudantium quidem repellat fugiat, ad ipsa doloribus
+          facere sapiente repudiandae explicabo vitae unde officia aspernatur
+          est exercitationem voluptas quaerat!
+        </p>
+      </div>
+      <footer class="box footer">
+        <h3>Lorem, ipsum dolor.</h3>
+      </footer>
+    </div>
+  </body>
+</html>
