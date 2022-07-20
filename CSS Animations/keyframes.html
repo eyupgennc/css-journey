@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+
+      .box {
+        background-color: yellow;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation-name: a1;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 48px;
+        position: relative;
+        top: 0;
+        left: -500px;
+        animation-name: a2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+      }
+      @keyframes a2 {
+        to {
+          top: 300px;
+          left: 300px;
+        }
+      }
+      @keyframes a1 {
+        0% {
+          background-color: red;
+          top: 0;
+          left: 0;
+        }
+
+        25% {
+          background-color: aqua;
+          top: 0;
+          left: 200px;
+        }
+        50% {
+          background-color: blueviolet;
+          top: 200px;
+          left: 200px;
+        }
+        75% {
+          background-color: aquamarine;
+          top: 200px;
+          left: 0;
+        }
+        100% {
+          background-color: red;
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem, ipsum.</h1>
+    <div class="box"></div>
+  </body>
+</html>
