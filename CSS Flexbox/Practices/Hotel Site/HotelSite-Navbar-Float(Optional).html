@@ -12,16 +12,54 @@
       referrerpolicy="no-referrer"
     />
     <title>Hotel Site - Navbar (Float)</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utils.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
       * {
         box-sizing: border-box;
+        padding: 0;
+        margin: 0;
       }
+
+      html {
+        font-size: 10px;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        background-color: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      h1,
+      h2 {
+        font-weight: 300;
+        line-height: 1.2;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
       header {
         background-color: #1a132f;
         overflow: hidden;
-        text-transform: uppercase;
       }
 
       ul {
@@ -42,7 +80,7 @@
         float: left;
         padding: 20px 50px 20px 20px;
       }
-      
+
       a {
         /* display: inline-block; */
         padding: 10px;
@@ -54,6 +92,39 @@
 
       a:hover {
         border-bottom: 2px solid #fff;
+      }
+
+      @media (max-width: 687px) {
+        h1 {
+          float: none;
+          text-align: center;
+        }
+
+        nav {
+          float: none;
+        }
+
+        nav li {
+          float: none;
+          text-align: center;
+        }
+      }
+
+      @media (min-width: 687px) and (max-width: 956px) {
+        h1 {
+          float: none;
+          text-align: center;
+        }
+
+        nav {
+          float: none;
+          text-align: center;
+        }
+
+        ul li {
+          float: none;
+          display: inline-block;
+        }
       }
     </style>
   </head>
