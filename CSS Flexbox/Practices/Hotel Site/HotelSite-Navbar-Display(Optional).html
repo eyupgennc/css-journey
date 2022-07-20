@@ -57,7 +57,7 @@
       }
 
       .container {
-        width: 1200px;
+        width: 80%;
         margin: auto;
       }
 
@@ -74,7 +74,7 @@
       header nav {
         text-align: right;
         display: inline-block;
-        width: calc(100% - 220px);
+        width: calc(100% - 230px);
       }
 
       header li {
@@ -85,10 +85,43 @@
       header ul a {
         padding: 10px;
         color: #faf3e3;
+        border-bottom: 2px solid black;
+        transition: border-bottom 0.6s;
       }
 
       header ul a:hover {
         border-bottom: 2px solid #ff9f29;
+      }
+
+      @media (max-width: 555px) {
+        header h1 {
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+        }
+        header nav {
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+
+        header li {
+          display: block;
+        }
+      }
+
+      @media (max-width: 844px) {
+        header h1 {
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+        }
+
+        header nav {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+        }
       }
     </style>
   </head>
