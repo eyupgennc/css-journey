@@ -59,6 +59,14 @@ p {
   padding: 0 2rem;
 }
 
+.category {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
 .btn {
   display: inline-block;
   border: none;
@@ -132,8 +140,8 @@ p {
   padding-bottom: 0.5rem;
 }
 .py-2 {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .px-1 {
@@ -230,6 +238,59 @@ p {
   border-radius: 0.3rem;
 }
 
+/* navbar */
+#main-nav {
+  background-color: #fff;
+}
+
+#main-nav img {
+  width: 65px;
+  margin: 0 20px;
+}
+
+#main-nav img:hover {
+  opacity: 0.8;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 2fr;
+  padding: 10px;
+  align-items: center;
+}
+
+#main-nav ul {
+  display: flex;
+  justify-self: start;
+}
+
+#main-nav ul a {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#main-nav ul a:hover {
+  opacity: 0.8;
+}
+
+#main-nav ul li a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+#main-nav .social-icons {
+  justify-self: end;
+}
+
+#main-nav .social-icons a {
+  padding: 0 0.8rem;
+}
+
+#main-nav .social-icons a:hover {
+  opacity: 0.8;
+}
+
 /* header */
 #header {
   color: #fff;
@@ -249,6 +310,7 @@ p {
   opacity: 0.4;
 }
 
+/* header */
 #header .header-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -260,12 +322,83 @@ p {
   z-index: 2;
 }
 
-.category {
-  display: inline-block;
+#header h1 {
+  margin: 1rem 0;
+}
+
+#header p {
+  margin: 1rem 0 2rem;
+}
+
+/* section */
+#main-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.articles-container img {
+  width: 100%;
+}
+
+.articles-container .card {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.articles-container p {
+  color: var(--dark-color);
+}
+
+/* footer */
+#footer {
+  background-color: var(--dark-color);
   color: #fff;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  padding: 0.4rem 0.6rem;
-  border-radius: 15px;
-  margin-bottom: 0.5rem;
+  margin-top: 20px;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer h2 {
+  margin-left: 0;
+}
+
+#footer .first img {
+  width: 150px;
+}
+
+#footer .third li {
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+
+#footer .third li a:hover {
+  color: #e76f51;
+  padding: 1rem 0;
+  border-bottom: 1px solid gray;
+}
+
+#footer .second input {
+  padding: 0.5rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+#footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+}
+
+#footer .footer-container > :last-child {
+  background-color: rgb(68, 68, 68);
+  text-align: center;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+}
+
+#footer .fourth a:hover {
+  opacity: 0.8;
 }
